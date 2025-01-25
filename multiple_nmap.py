@@ -46,7 +46,7 @@ def main(argv):
         with open(inputfile, "r") as ips_file:
             target_ips = ips_file.readlines()
     elif args.target is not None: # targets specified in arg
-        target_items = args.targets.split(',')
+        target_items = args.target.split(',')
         for item in target_items:
             if "/" in item: # network
                 try:
